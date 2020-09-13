@@ -1,0 +1,42 @@
+.discipulado__cover{
+  margin-top: -5rem;
+  background: linear-gradient( 115deg, rgba(31, 163, 71, 0.2), rgba(31, 163, 71, 0.1) ), url("../assets/bible.jpg") no-repeat;
+  background-position: 0px 180%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+h3{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+article{
+  text-align: justify;
+}
+p{
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.stepOne{
+  margin-bottom: 1.5rem;
+}
+.pillars__item{
+  margin-bottom: 1rem;
+}
+#mentorship{
+  margin: 2rem 0 1rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+  height: 10rem;
+  width: 100%;
+  border: 1px solid #103C57;
+  border-radius: 4px;
+  resize: vertical;
+}
+.farewell{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}

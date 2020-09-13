@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+    
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="/assets/pilares.svg" alt="Pilares - estilo de vida cristão bíblico" class="logo__image">
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li class="menu__items"><a href="/">Início</a></li>
+          <li class="menu__items"><a href="#about">Quem Somos</a></li>
+          <li class="menu__items"><a href="/discipulado">Discipulado</a></li>
+          <li class="menu__items"><a href="/blog">Blog</a></li>
+          <li class="menu__items"><a href="#contact">Contato</a></li>
+          <li class="menu__items"><a href="/login"><i class="material-icons">login</i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+    
+    <footer class="footer">
+      &copy Discipulado Pilares
+    </footer>
+</body>
+</html>

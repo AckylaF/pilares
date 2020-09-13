@@ -1,0 +1,131 @@
+.home__cover{
+  background: linear-gradient( 115deg, rgba(31, 163, 71, 0.2), rgba(31, 163, 71, 0.1) ), url("../assets/cover.jpg") no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.cover__title{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.cover__title span:nth-child(1){
+  align-self: flex-start;
+  text-shadow: 1px 1px 1px #212529;
+}
+.cover__title span:nth-child(2){
+  font-size: 3.5rem;
+  align-self: center;
+  text-shadow: 2px 2px 2px #fff;
+  color: #1fa347;
+}
+.cover__title span:nth-child(3){
+  align-self: center;
+  text-shadow: 1px 1px 1px #212529;
+}
+.cover__title span:nth-child(4){
+  align-self: flex-end;
+  text-shadow: 1px 1px 1px #212529;
+}
+.home__about{
+  padding: 1.5rem 0 4rem;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.about__title{
+  font-size: 1.5rem;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+}
+.about__slider{
+  height: 80%;
+  margin-top: 1rem;
+}
+.slider__container{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 20%));
+  grid-gap: 3rem;
+  justify-content: center;
+  height: 100%;
+  margin-top: 2rem;
+}
+.slider__profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px -4px #212529;
+  transition: .2s;
+}
+.slider__profile:hover{
+  transform: scale(1.1);
+}
+.profile__picture{
+  width: 100%;
+}
+.profile__picture img{
+  width: 100%;
+  height: 100%;
+}
+.profile__name{
+  letter-spacing: .1rem;
+  font-weight: bold;
+  margin-top: .5rem;
+}
+.profile__info{
+  padding: .5rem;
+}
+.home__contact{
+  background-color: #103C57;
+  color: #fff;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: .7fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+.contact__greeting{
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.contact__form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* CONTACT FORM */
+.form__name, .form__email, .form__phone, .form__message{
+  display: flex;
+  flex-direction: column;
+}
+#name__label, #email__label, #phone__label, #message__label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+#name, #email, #number{
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+#message{
+  height: 7.5rem;
+  resize: vertical;
+  border-radius: 2px;
+  padding: .5rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}

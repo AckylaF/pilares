@@ -1,0 +1,109 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Discipulado Pilares</title>
+  <link rel="stylesheet" href="styles/home.css">
+{% endblock head %}
+
+
+{% block content %}
+  <main>
+    <div  class="home__cover" id="cover">
+      <h1 class="cover__title">
+        <span>Somos discípulos de</span> 
+        <span>JESUS</span> 
+        <span>fazendo discípulos</span> 
+        <span>nas coisas simples da vida.</span>
+      </h1>
+    </div>
+
+    <article class="home__about">
+      <h3 id="about" class="about__title">Quem somos</h3>
+
+      <div class="about__slider container">
+        <ul class="slider__container">
+
+          <li class="slider__profile">
+
+            <div class="profile__picture">
+              <img src="/assets/jessica.jpeg" alt="Jessica Nayara">
+            </div>
+            <span class="profile__name">Lorem Ipsum</span>
+
+            <p class="profile__info">
+              Lorem ipsum dolor sit amet consectetur adpiscing elit.
+              Lorem ipsum dolor sit amet consectetur adpiscing elit.
+            </p>
+          </li>
+
+          <li class="slider__profile">
+            <div class="profile__picture">
+              <img src="/assets/oscar.jpeg" alt="Oscar Egress">
+            </div>
+
+            <span class="profile__name">Lorem Ipsum</span>
+
+            <p class="profile__info">
+              Lorem ipsum dolor sit amet consectetur adpiscing elit.
+              Lorem ipsum dolor sit amet consectetur adpiscing elit.
+            </p>
+          </li>
+
+          <li class="slider__profile">
+            <div class="profile__picture">
+              <img src="/assets/andrea.jpeg" alt="Andrea Gomes">
+            </div>
+
+            <span class="profile__name">Lorem Ipsum</span>
+
+            <p class="profile__info">
+              Lorem ipsum dolor sit amet consectetur adpiscing elit.
+              Lorem ipsum dolor sit amet consectetur adpiscing elit.
+            </p>
+          </li>
+
+        </ul>
+      </div> 
+
+
+    </article>
+
+    <article id="contact" class="home__contact">
+
+      <div class="contact__greeting">
+        <p>Olá, se você chegou até aqui é porque está decidido a assumir o compromisso de viver os PILARES! Glória a Deus por isso! 
+          Você está indo na direção certa e nós queremos caminhar com você mais um pouco.
+          Mande-nos uma mensagem e entraremos em contato com você.
+        </p>
+      </div>
+      <form action="" class="contact__form">
+
+        <div class="form__name">
+          <label for="name" id="name__label">Nome</label>
+          <input type="text" id="name" placeholder="Escreva seu nome" required>
+        </div>
+
+        <div class="form__email">
+          <label for="email" id="email__label">E-mail</label>
+          <input type="email" id="email" placeholder="Escreva seu e-mail" required>
+        </div>
+
+        <div class="form__phone">
+          <label for="phone" id="phone__label">Whatsapp (opcional)</label>
+          <input type="number" id="number" placeholder="(xx) 9xxxx-xxxx">
+        </div>
+
+        <div class="form__message">
+          <label id="message__label" for="message">Mensagem</label>
+          <textarea name="message" id="message" placeholder="Deixe aqui sua mensagem e te retornaremos em breve"></textarea>
+        </div>
+
+        <button type="submit" class="button">Enviar</button>
+
+      </form>
+    </article>
+
+  </main>
+
+
+{% endblock content %}
