@@ -12,11 +12,12 @@ server.use(routes);
 
 server.set("view engine", "njk");
 
-nunjucks.configure(__dirname + "src/app/views", {
+nunjucks.configure("src/App/views", {
   express: server,
   autoescape: false,
   noCache: true,
 });
+nunjucks.render("layout.njk");
 
 let port = process.env.PORT || 3000;
 
