@@ -4,6 +4,7 @@
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     
     {% block head %}{% endblock %}
 
@@ -20,7 +21,6 @@
           <li class="menu__items"><a href="/discipulado">Discipulado</a></li>
           <li class="menu__items"><a href="/blog">Blog</a></li>
           <li class="menu__items"><a href="#contact">Contato</a></li>
-          <li class="menu__items"><a href="/login"><i class="material-icons">login</i></a></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +28,8 @@
     {% block content %}{% endblock %}
     
     <footer class="footer">
-      &copy Discipulado Pilares
+      <span>&copy Projeto Pilares</span>
+      <img src="/assets/pilares.svg" alt="Pilares - estilo de vida cristão bíblico" class="footer__image">
     </footer>
 </body>
 </html>

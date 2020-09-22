@@ -10,11 +10,14 @@
   <main>
     <div  class="home__cover" id="cover">
       <h1 class="cover__title">
-        <span>Somos discípulos de</span>
-        <span>JESUS</span> 
-        <span>fazendo discípulos</span> 
-        <span>nas coisas simples da vida.</span>
+        <span>Ser igreja</span>
+        <span>vida alicerçada</span>
+        <span> e plantar igreja</span>
+        <span>e frutífera</span>
+        <span>através de uma</span>
+        <span>com Jesus!</span>
       </h1>
+      <a href="#contact" class="cover__callToAction">Faça parte</a>
     </div>
 
     <article class="home__about">
@@ -71,9 +74,13 @@
     <article id="contact" class="home__contact">
 
       <div class="contact__greeting">
-        <p>Olá, se você chegou até aqui é porque está decidido a assumir o compromisso de viver os PILARES! Glória a Deus por isso! 
-          Você está indo na direção certa e nós queremos caminhar com você mais um pouco.
-          Mande-nos uma mensagem e entraremos em contato com você.
+        <p>Olá! se você chegou até aqui depois de assistir nossos vídeos no Youtube, o próximo passo
+          é começar a prática do <span style="text-transform:uppercase;">pilares</span>.
+          Então, se você quer receber nosso mentoreamento nesse sentido, faça seu cadastro ao lado 
+          e depois acesse a aba "Discipulado".
+        </p>
+        <p>
+          Se você ainda não assistiu nossos vídeos, acesse o <a href="#" class="greeting__channelLink">nosso canal</a>.
         </p>
       </div>
       <form action="" class="contact__form">
@@ -81,6 +88,27 @@
         <div class="form__name">
           <label for="name" id="name__label">Nome</label>
           <input type="text" id="name" placeholder="Escreva seu nome" required>
+        </div>
+
+        <div class="form__inputGroup">
+          <div class="form__birth">
+            <label for="birth" id="birth__label">Data de nascimento</label>
+            <input type="date" id="birth" placeholder="Idade" required>
+          </div>
+
+          <div class="form__gender">
+            <label for="gender" id="gender__label">Sexo</label>
+            <select name="gender" id="gender" required>
+              <option value=""></option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__address">
+          <label for="address" id="address__label">Residência</label>
+          <input type="text" id="address" placeholder="Cidade, estado e país apenas" required>
         </div>
 
         <div class="form__email">

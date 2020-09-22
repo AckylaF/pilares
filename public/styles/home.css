@@ -1,34 +1,39 @@
 .home__cover{
   background: linear-gradient( 115deg, rgba(31, 163, 71, 0.2), rgba(31, 163, 71, 0.1) ), url("../assets/cover.jpg") no-repeat;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
 }
 .cover__title{
-  width: 70%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 35%;
   text-transform: uppercase;
   font-size: 2.5rem;
+  padding: 0 .5rem;
+  margin-top: 5rem;
 }
-.cover__title span:nth-child(1){
-  align-self: flex-start;
+.cover__title span{
   text-shadow: 1px 1px 1px #212529;
 }
-.cover__title span:nth-child(2){
-  font-size: 3.5rem;
-  align-self: center;
-  text-shadow: 2px 2px 2px #fff;
-  color: #1fa347;
+.cover__title span:nth-child(1), .cover__title span:nth-child(3), .cover__title span:nth-child(5) {
+  text-align: end;
 }
-.cover__title span:nth-child(3){
-  align-self: center;
-  text-shadow: 1px 1px 1px #212529;
+.cover__callToAction{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  color: var(--hover-green);
+  margin-top: 3rem;
+  font-weight: bold;
+  transition: .25s;
 }
-.cover__title span:nth-child(4){
-  align-self: flex-end;
-  text-shadow: 1px 1px 1px #212529;
+.cover__callToAction:hover{
+  background-color: var(--hover-green);
+  color: #fff;
 }
 .home__about{
   padding: 1.5rem 0 4rem;
@@ -100,26 +105,42 @@
   font-size: 1.2rem;
   padding: 1rem;
 }
+.greeting__channelLink{
+  color: var(--hover-green);
+  text-decoration: underline;
+  transition: .25s;
+}
+.greeting__channelLink:hover{
+  color: #fff;
+  text-decoration: none;
+  background-position-x: 100%;
+  background-color: var(--hover-green);
+}
 .contact__form{
   width: 80%;
   margin: 0 auto;
 }
 
 /* CONTACT FORM */
-.form__name, .form__email, .form__phone, .form__message{
+.form__name, .form__birth, .form__gender, .form__address, .form__email, .form__phone, .form__message{
   display: flex;
   flex-direction: column;
 }
-#name__label, #email__label, #phone__label, #message__label {
+#name__label, #birth__label, #gender__label, #address__label, #email__label, #phone__label, #message__label {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: .4rem;
 }
-#name, #email, #number{
+#name, #birth, #gender, #address, #email, #number{
   font-size: 1rem;
   padding: .5rem;
   border-radius: 3px;
   margin-bottom: 1.5rem;
+}
+.form__inputGroup{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
 #message{
   height: 7.5rem;
