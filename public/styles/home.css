@@ -157,7 +157,7 @@
   padding: 1rem;
 }
 .greeting__channelLink{
-  color: var(--hover-green);
+  color: var(--main-green);
   text-decoration: underline;
   transition: .25s;
 }
@@ -165,7 +165,7 @@
   color: #fff;
   text-decoration: none;
   background-position-x: 100%;
-  background-color: var(--hover-green);
+  background-color: var(--main-green);
 }
 .contact__form{
   width: 80%;
