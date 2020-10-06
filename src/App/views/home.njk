@@ -10,12 +10,7 @@
   <main>
     <div  class="home__cover" id="cover">
       <h1 class="cover__title">
-        <span>Ser igreja</span>
-        <span>vida alicerçada</span>
-        <span> e plantar igreja</span>
-        <span>e frutífera</span>
-        <span>através de uma</span>
-        <span>com Jesus!</span>
+        Ser igreja e plantar igreja através de uma vida alicerçada e frutífera  com Jesus!
       </h1>
       <a href="#contact" class="cover__callToAction">Faça parte</a>
     </div>
@@ -26,43 +21,71 @@
       <div class="about__slider container">
         <ul class="slider__container">
 
-          <li class="slider__profile">
+          <li class="slider__profile slider__profile--rotation">
 
-            <div class="profile__picture">
-              <img src="/assets/profile/jessica.jpeg" alt="Jessica Nayara">
+            <div class="profile__front">
+              <div class="profile__picture">
+                <img src="/assets/profile/jessica.jpeg" alt="Jessica Nayara">
+              </div>
+              <span class="profile__name">Jéssica Torres</span>
+
+              <p class="profile__info">
+                Nascida em Belo Horizonte-MG, casada, mãe, apaixonada por Jesus e pela obra missionária.
+              </p>
             </div>
-            <span class="profile__name">Lorem Ipsum</span>
 
-            <p class="profile__info">
-              Lorem ipsum dolor sit amet consectetur adpiscing elit.
-              Lorem ipsum dolor sit amet consectetur adpiscing elit.
-            </p>
+            <div class="profile__back">
+              <div class="profile__picture">
+                <img src="/assets/profile/oscar.jpeg" alt="Oscar Torres">
+              </div>
+              <span class="profile__name">Oscar Torres</span>
+
+              <p class="profile__info">
+                Nascido em Porto Alegre, 30 anos. 
+                Estou convencido de que Deus quer usar a vida de cada um de nós para mudar a história de nossa nação, e do mundo. 
+                Por isso me uni a este projeto, fundamental para o amadurecimento de cada seguidor de Jesus.
+              </p>
+            </div>
+
           </li>
 
-          <li class="slider__profile">
-            <div class="profile__picture">
-              <img src="/assets/profile/oscar.jpeg" alt="Oscar Egress">
+          <li class="slider__profile slider__profile--rotation">
+            <div class="profile__front">
+              <div class="profile__picture">
+                <img src="/assets/profile/andrea.jpeg" alt="Andrea Gomes">
+              </div>
+              <span class="profile__name">Andréa Gomes</span>
+
+              <p class="profile__info">
+                Brasileira, nascida em Belo Horizonte/MG, em 06/11/67, frutificando na Obra do Senhor e vivendo uma vida de discipulado.
+              </p>
             </div>
 
-            <span class="profile__name">Lorem Ipsum</span>
+            <div class="profile__back ">
+              <div class="profile__picture">
+                <img src="/assets/profile/arnaldo.jpeg" alt="Arnaldo Gomes">
+              </div>
 
-            <p class="profile__info">
-              Lorem ipsum dolor sit amet consectetur adpiscing elit.
-              Lorem ipsum dolor sit amet consectetur adpiscing elit.
-            </p>
+              <span class="profile__name">Arnaldo Gomes</span>
+
+              <p class="profile__info">
+                Brasileiro, nascido em Brejaubinha/MG, no dia do trabalho de 1966. 
+                Casado para sempre, Pai amoroso de uma missionária e Avô babão de uma miniatura abençoada.
+                Compartilho com vocês o Pilar M e sou também um Sedento da Palavra de Deus.
+              </p>
+            </div>
           </li>
 
-          <li class="slider__profile">
-            <div class="profile__picture">
-              <img src="/assets/profile/andrea.jpeg" alt="Andrea Gomes">
-            </div>
+          <li class="slider__profile ">
+              <div class="profile__picture">
+                <img src="/assets/profile/bruno.jpeg" alt="Bruno Carvalho">
+              </div>
 
-            <span class="profile__name">Lorem Ipsum</span>
-
-            <p class="profile__info">
-              Lorem ipsum dolor sit amet consectetur adpiscing elit.
-              Lorem ipsum dolor sit amet consectetur adpiscing elit.
-            </p>
+              <span class="profile__name">Bruno Carvalho</span>
+                
+              <p class="profile__info">
+                Missionário, casado com Íris, pai do Rael e Bianca. Natal/RN
+              </p>
           </li>
 
         </ul>
@@ -125,17 +148,30 @@
           Se você ainda não assistiu nossos vídeos, acesse o <a href="#" class="greeting__channelLink">nosso canal</a>.
         </p>
       </div>
-      <form action="" class="contact__form">
+
+      <form method="POST" action="/send" class="contact__form">
 
         <div class="form__name">
           <label for="name" id="name__label">Nome</label>
-          <input type="text" id="name" placeholder="Escreva seu nome" required>
+          <input 
+            type="text"
+            name="name"
+            id="name" 
+            placeholder="Escreva seu nome" 
+            required
+          >
         </div>
 
         <div class="form__inputGroup">
           <div class="form__birth">
             <label for="birth" id="birth__label">Data de nascimento</label>
-            <input type="date" id="birth" placeholder="Idade" required>
+            <input 
+              type="date" 
+              name="birth" 
+              id="birth" 
+              placeholder="Idade" 
+              required
+            >
           </div>
 
           <div class="form__gender">
@@ -150,20 +186,41 @@
 
         <div class="form__address">
           <label for="address" id="address__label">Residência</label>
-          <input type="text" id="address" placeholder="Cidade, estado e país apenas" required>
+          <input 
+            type="text"
+            name="address"
+            id="address" 
+            placeholder="Cidade, estado e país apenas" 
+            required
+          >
         </div>
 
         <div class="form__email">
           <label for="email" id="email__label">E-mail</label>
-          <input type="email" id="email" placeholder="Escreva seu e-mail" required>
+          <input 
+            type="email"
+            name="email"
+            id="email" 
+            placeholder="Escreva seu e-mail" 
+            required
+          >
         </div>
 
         <div class="form__phone">
           <label for="phone" id="phone__label">Whatsapp (opcional)</label>
-          <input type="number" id="number" placeholder="(xx) 9xxxx-xxxx">
+          <input 
+            type="number"
+            name="phone"
+            id="number" 
+            placeholder="(xx) 9xxxx-xxxx"
+          >
         </div>
 
-        <button type="submit" class="button">Enviar</button>
+        <div class="form__action">
+          <button onclick="Mask.showConfirmationMessage(event)" type="submit" class="button">Enviar</button>
+          <p class="form__confirmationMessage form__confirmationMessage--hidden">Envio realizado com sucesso</p>
+          <p class="form__errorMessage form__errorMessage--hidden">Algo de errado não está certo.</p>
+        </div>
 
       </form>
     </article>

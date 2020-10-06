@@ -1,13 +1,11 @@
 const express = require("express");
 const routes = express.Router();
 
+const ContentController = require('./App/controlers/contentController');
 
-routes.get("/", function (req, res) {
-  return res.render("home");
-});
+routes.get("/", ContentController.index);
+routes.get("/discipulado/:id", ContentController.show);
 
-routes.get("/discipulado", function (req, res) {
-  return res.render("discipulado");
-});
+routes.post("/send", ContentController.send);
 
 module.exports = routes;

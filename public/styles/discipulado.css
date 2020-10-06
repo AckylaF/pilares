@@ -1,5 +1,5 @@
 .discipulado__cover{
-  margin-top: -5rem;
+  margin-top: -9rem;
   background: linear-gradient( 115deg, rgba(31, 163, 71, 0.2), rgba(31, 163, 71, 0.1) ), url("../assets/bible.jpg") no-repeat;
   background-position: 0px 180%;
   background-attachment: fixed;
@@ -18,14 +18,39 @@ p{
   margin-top: 1rem;
   line-height: 1.5rem;
 }
-.stepOne{
-  margin-bottom: 1.5rem;
+.feedback{
+  display: none;
 }
-.pillars__item{
-  margin-bottom: 1rem;
+table{
+  border: 1px solid;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+tr{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.form__name{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+#name__label{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 2rem 0 .4rem;
+}
+#name{
+  padding: .5rem;
+  font-size: 1rem;
+  border: 1px solid #103C57;
+  border-radius: 4px;
 }
 #mentorship{
-  margin: 2rem 0 1rem;
+  margin: .5rem 0 1rem;
   padding: .5rem;
   font-size: 1.5rem;
   height: 10rem;
@@ -38,5 +63,5 @@ p{
   text-align: center;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }

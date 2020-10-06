@@ -4,6 +4,7 @@
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/mediaQueries.css">
     <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
     
     {% block head %}{% endblock %}
@@ -12,17 +13,93 @@
 <body>
     <header class="header">
       <div class="header__logo">
-        <img src="/assets/pilares.svg" alt="Pilares - estilo de vida cristão bíblico" class="logo__image">
+        <a href="/">
+          <img src="/assets/pilares.svg" alt="Pilares - estilo de vida cristão bíblico" class="logo__image">
+        </a>
       </div>
-      <nav class="header__menu">
-        <ul>
-          <li class="menu__items"><a href="/">Início</a></li>
-          <li class="menu__items"><a href="#about">Sobre</a></li>
-          <li class="menu__items"><a href="/discipulado">Discipulado</a></li>
-          <li class="menu__items"><a href="/blog">Blog</a></li>
-          <li class="menu__items"><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+        {# <i onclick="Menu.toggleMenu()" class="material-icons header__menuIcon">menu</i> #}
+        <div onclick="Menu.toggleMenu()" class="header__menuIcon">
+          <div class="menu__lines line1 "></div>
+          <div class="menu__lines line2 "></div>
+          <div class="menu__lines line3 "></div>
+        </div>
+
+        <div onclick="Menu.toggleMenu()" class="header__background"></div>
+        <nav class="header__menu header__menu--hidden">
+          <ul>
+            <li class="menu__items"><a href="/">Início</a></li>
+            <li class="menu__items"><a href="/#about">Sobre</a></li>
+
+            <li class="menu__items menu__dropdownContainer">
+              <span>Discipulado</span>
+              <ul class="menu__dropdown">
+
+                <li class="dropdown__items"><a href="1">Introdução</a></li>
+
+                <li class="dropdown__items">
+                  Pilar G
+                  <ul class="dropdown__nestedMenu">
+                    <li class="nestedMenu__items"><a href="/discipulado/2">Dia 2</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/3">Dia 3</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/4">Dia 4</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/5">Dia 5</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/6">Dia 6</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown__items">
+                  Pilar A
+                  <ul class="dropdown__nestedMenu">
+                    <li class="nestedMenu__items"><a href="/discipulado/7">Dia 7</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/8">Dia 8</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/9">Dia 9</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/10">Dia 10</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/11">Dia 11</a></li>
+                  </ul>  
+                </li>
+
+                <li class="dropdown__items">
+                  Pilar D
+                  <ul class="dropdown__nestedMenu">
+                    <li class="nestedMenu__items"><a href="/discipulado/12">Dia 12</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/13">Dia 13</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/14">Dia 14</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/15">Dia 15</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/16">Dia 16</a></li>
+                  </ul>  
+                </li>
+
+                <li class="dropdown__items">
+                  Pilar C
+                  <ul class="dropdown__nestedMenu">
+                    <li class="nestedMenu__items"><a href="/discipulado/17">Dia 17</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/18">Dia 18</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/19">Dia 19</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/20">Dia 20</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/21">Dia 21</a></li>
+                  </ul>  
+                </li>
+
+                <li class="dropdown__items">
+                  Pilar M
+                  <ul class="dropdown__nestedMenu">
+                    <li class="nestedMenu__items"><a href="/discipulado/22">Dia 22</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/23">Dia 23</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/24">Dia 24</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/25">Dia 25</a></li>
+                    <li class="nestedMenu__items"><a href="/discipulado/26">Dia 26</a></li>
+                  </ul>  
+                </li>
+
+                <li class="dropdown__items"><a href="27">Conclusão</a></li>
+
+              </ul>
+            </li>
+
+            <li class="menu__items"><a href="/blog">Blog</a></li>
+            <li class="menu__items"><a href="/#contact">Contato</a></li>
+          </ul>
+        </nav>
     </header>
 
     {% block content %}{% endblock %}
@@ -31,5 +108,7 @@
       <span>&copy Projeto Pilares</span>
       <img src="/assets/pilares.svg" alt="Pilares - estilo de vida cristão bíblico" class="footer__image">
     </footer>
+
+    <script src="/scripts.js"></script>
 </body>
 </html>

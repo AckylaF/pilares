@@ -1,14 +1,16 @@
 const express = require("express");
 const nunjucks = require("nunjucks");
 const routes = require("./routes");
-const methodOverride = require("method-override");
+const bodyParser = require('body-parser');
 
 const server = express();
 
-server.use(express.urlencoded({ extended: true }));
-server.use(express.static("public"));
-server.use(methodOverride("_method"));
-server.use(routes);
+server.use(
+  bodyParser.json(), 
+  express.urlencoded({ extended: true }),
+  express.static("public"),
+  routes
+);
 
 server.set("view engine", "njk");
 
@@ -19,7 +21,7 @@ nunjucks.configure("src/App/views", {
 });
 nunjucks.render("layout.njk");
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 5000;
 
 server.listen(port, function () {
   console.log("Server is running");
