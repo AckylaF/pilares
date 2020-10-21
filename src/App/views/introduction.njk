@@ -1,0 +1,69 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Discipulado Pilares</title>
+  <link rel="stylesheet" href="/styles/discipulado.css">
+{% endblock head %}
+
+
+{% block content %}
+  <div on class="discipulado__cover">
+  </div>
+  
+  <main class="container">
+    <h1 class="intro__title">Nível 1 de capacitação - Guia de 27 dias de caminhada</h1>
+
+    <article>
+      <h3 class="article__title">Dia 1</h3>
+
+      <p>Olá, se você chegou até aqui é porque está decidido a assumir o compromisso de <strong>viver os PILARES!</strong> Glória a Deus por isso! Você está indo na direção certa e nós queremos caminhar com você mais um pouco. Nós dividimos o aprendizado em etapas para o melhor aproveitamento, então siga esse guia fazendo <u>um dia de cada vez</u>, ok?</p>
+      <p>Primeiramente, é muito importante falar que os PILARES que apresentamos a você não foram inventados por homem ou mulher; eles são instruções do próprio Deus. Todos eles foram retirados da Bíblia e destacados como FUNDAMENTOS NECESSÁRIOS para a vida cristã.</p>
+      <p>Isso quer dizer, que viver os PILARES é ter um <strong>estilo de vida cristão bíblico</strong>.</p>
+      <p>É claro que a vida cristã não se resume a eles, porém afirma-se de novo: são fundamentos necessários! Você precisa deles para começar, para crescer, para permanecer, até que Jesus volte. Você NUNCA vai deixar de vivê-los, embora outras coisas sejam acrescentadas ao longo do caminho. Por isso, eles são tão importantes.</p>
+      <p>Agora veremos passos práticos que você precisa tomar para viver os PILARES.</p>
+
+      <p class="article__steps">Passo 1- Viver os PILARES é um estilo de vida em que você busca:</p>
+
+      <section class="article__grid">
+        <div class="grid__image grid__image--1"></div>
+        <p>Conhecer a Deus constantemente</p>
+
+        <div class="grid__image grid__image--2"></div>
+        <p>Conhecer a nova vida que Ele te deu</p>
+
+        <div class="grid__image grid__image--3"></div>
+        <p>Diariamente orar, ler a Bíblia, praticar, testemunhar, amar e servir às pessoas</p>
+
+        <div class="grid__image grid__image--4"></div>
+        <p>Viver em união e cooperação com seus irmãos em Cristo</p>
+
+        <div class="grid__image grid__image--5"></div>
+        <p>Conectar outras pessoas ao que você tem vivido</p>
+      </section>
+
+      <p>
+        Então responda: O que você precisa fazer HOJE para se adequar a essa realidade?
+        Escreva em um papel seus planos, se necessário. Isso ajuda organizar as ideias.
+      </p>
+    </article>
+
+    <form class="feedback" action="/send" method="POST">
+      <div class="form__name">
+          <label for="name" id="name__label">Nome</label>
+          <input 
+            type="text"
+            name="name"
+            id="name" 
+            placeholder="Escreva seu nome" 
+            required
+          >
+      </div>
+      <input id="feedbackDay" type="hidden" name="feedbackDay">
+      <textarea onclick="Mask.getFeedbackDay()" name="mentorship" id="mentorship" required></textarea>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+
+    <p class="farewell">Com a graça de Deus, nos vemos amanhã!</p>
+
+  </main>
+{% endblock content %}

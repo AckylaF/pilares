@@ -5,133 +5,132 @@
   <link rel="stylesheet" href="styles/home.css">
 {% endblock head %}
 
-
 {% block content %}
   <main>
-    <div  class="home__cover" id="cover">
+    <div class="home__cover" id="cover">
       <h1 class="cover__title">
-        Ser igreja e plantar igreja através de uma vida alicerçada e frutífera  com Jesus!
+        Ser igreja e plantar igreja através de uma vida alicerçada e frutífera com Jesus!
       </h1>
       <a href="#contact" class="cover__callToAction">Faça parte</a>
     </div>
 
-    <article class="home__about">
+    <article class="about__slider">
       <h2 id="about" class="about__title">Sobre</h2>
 
-      <div class="about__slider container">
-        <ul class="slider__container">
+      <ul class="slider__container">
 
-          <li class="slider__profile slider__profile--rotation">
+        <li class="slider__profile">
+          <div class="profile__picture">
+            <img src="/assets/profile/jessica.jpeg" alt="Jessica Nayara">
+          </div>
+          <span class="profile__name">Jéssica Torres</span>
 
-            <div class="profile__front">
-              <div class="profile__picture">
-                <img src="/assets/profile/jessica.jpeg" alt="Jessica Nayara">
-              </div>
-              <span class="profile__name">Jéssica Torres</span>
+          <p class="profile__info">
+            Nascida em Belo Horizonte-MG, casada, mãe, apaixonada por Jesus e pela obra missionária.
+          </p>
+        </li>
 
-              <p class="profile__info">
-                Nascida em Belo Horizonte-MG, casada, mãe, apaixonada por Jesus e pela obra missionária.
-              </p>
-            </div>
+        <li class="slider__profile ">
+          <div class="profile__picture">
+            <img src="/assets/profile/oscar.jpeg" alt="Oscar Torres">
+          </div>
+          <span class="profile__name">Oscar Torres</span>
 
-            <div class="profile__back">
-              <div class="profile__picture">
-                <img src="/assets/profile/oscar.jpeg" alt="Oscar Torres">
-              </div>
-              <span class="profile__name">Oscar Torres</span>
+          <p class="profile__info">
+            Nascido em Porto Alegre, 30 anos. Estou convencido de que Deus quer usar a vida de cada um de nós para mudar a história de nossa nação, e do mundo. Por isso me uni a este projeto, fundamental para o amadurecimento de cada seguidor de Jesus.
+          </p>
+        </li>
 
-              <p class="profile__info">
-                Nascido em Porto Alegre, 30 anos. 
-                Estou convencido de que Deus quer usar a vida de cada um de nós para mudar a história de nossa nação, e do mundo. 
-                Por isso me uni a este projeto, fundamental para o amadurecimento de cada seguidor de Jesus.
-              </p>
-            </div>
+        <li class="slider__profile">
+          <div class="profile__picture">
+            <img src="/assets/profile/andrea.jpeg" alt="Andrea Gomes">
+          </div>
+          <span class="profile__name">Andréa Gomes</span>
 
-          </li>
+          <p class="profile__info">
+            Brasileira, nascida em Belo Horizonte-MG, em 06/11/67, frutificando na Obra do Senhor e vivendo uma vida de discipulado.
+          </p>
+        </li>
 
-          <li class="slider__profile slider__profile--rotation">
-            <div class="profile__front">
-              <div class="profile__picture">
-                <img src="/assets/profile/andrea.jpeg" alt="Andrea Gomes">
-              </div>
-              <span class="profile__name">Andréa Gomes</span>
+        <li class="slider__profile ">
+          <div class="profile__picture">
+            <img src="/assets/profile/arnaldo.jpeg" alt="Arnaldo Gomes">
+          </div>
 
-              <p class="profile__info">
-                Brasileira, nascida em Belo Horizonte/MG, em 06/11/67, frutificando na Obra do Senhor e vivendo uma vida de discipulado.
-              </p>
-            </div>
+          <span class="profile__name">Arnaldo Gomes</span>
 
-            <div class="profile__back ">
-              <div class="profile__picture">
-                <img src="/assets/profile/arnaldo.jpeg" alt="Arnaldo Gomes">
-              </div>
+          <p class="profile__info">
+            Brasileiro, nascido em Brejaubinha-MG, no dia do trabalho de 1966. Casado para sempre, Pai amoroso de uma missionária e Avô babão de uma miniatura abençoada. Compartilho com vocês o Pilar M e sou também um Sedento da Palavra de Deus.
+          </p>
+        </li>
 
-              <span class="profile__name">Arnaldo Gomes</span>
+        <li class="slider__profile ">
+          <div class="profile__picture">
+            <img src="/assets/profile/bruno.jpeg" alt="Bruno Carvalho">
+          </div>
 
-              <p class="profile__info">
-                Brasileiro, nascido em Brejaubinha/MG, no dia do trabalho de 1966. 
-                Casado para sempre, Pai amoroso de uma missionária e Avô babão de uma miniatura abençoada.
-                Compartilho com vocês o Pilar M e sou também um Sedento da Palavra de Deus.
-              </p>
-            </div>
-          </li>
+          <span class="profile__name">Bruno Carvalho</span>
 
-          <li class="slider__profile ">
-              <div class="profile__picture">
-                <img src="/assets/profile/bruno.jpeg" alt="Bruno Carvalho">
-              </div>
+          <p class="profile__info">
+            Missionário, casado com Íris, pai do Rael e Bianca. Natal - RN
+          </p>
+        </li>
 
-              <span class="profile__name">Bruno Carvalho</span>
-                
-              <p class="profile__info">
-                Missionário, casado com Íris, pai do Rael e Bianca. Natal/RN
-              </p>
-          </li>
+      </ul>
+    </article>
 
-        </ul>
-      </div> 
+    <article class="home__about">
 
-      <div class="about__info container">
+      <div class="about__banner"></div>
+
+      <div class="about__info">
+        <h3 class="info__title">Visão, Missão e Objetivos</h3>
+
         <ul class="info__topics">
           <li class="topics__item topics__vision">
             <img src="/assets/icons/glasses.svg" alt="visão" class="item__icon">
-            <span>Visão</span>
+            {# <span>Visão</span> #}
             <div class="item__description">
               <p>Ver cristãos comprometidos com Jesus e com a Sua obra na igreja e através dela.</p>
             </div>
           </li>
           <li class="topics__item topics__mission">
             <img src="/assets/icons/mission.svg" alt="missão" class="item__icon">
-            <span>Missão</span>
+            {# <span>Missão</span> #}
             <div class="item__description">
               <p>Mobilizar cristãos para serem igreja e plantarem igreja por todo o mundo.</p>
             </div>
           </li>
           <li class="topics__item topics__objectives">
             <img src="/assets/icons/target.svg" alt="objetivos" class="item__icon">
-            <span>Objetivos</span>
+            {# <span>Objetivos</span> #}
             <div class="item__description">
               <ul>
                 <li>
-                  <i class="material-icons">send</i>
-                  Oferecer capacitação e mentoreamento online sobre os <span style="text-transform:uppercase;">pilares</span> centrais da vida da igreja;
+                  <i class="material-icons">fiber_manual_record</i>
+                  Oferecer capacitação e mentoreamento online sobre os
+                  <span style="text-transform:uppercase;">pilares</span>
+                  centrais da vida da igreja;
                 </li>
                 <li>
-                  <i class="material-icons">send</i>
-                  Encorajar cristãos a viverem os <span style="text-transform:uppercase;">pilares</span> e passar essas práticas a outros por si mesmos;
+                  <i class="material-icons">fiber_manual_record</i>
+                  Encorajar cristãos a viverem os
+                  <span style="text-transform:uppercase;">pilares</span>
+                  e passar essas práticas a outros por si mesmos;
                 </li>
                 <li>
-                  <i class="material-icons">send</i>
+                  <i class="material-icons">fiber_manual_record</i>
                   Despertar cristãos para um compromisso pessoal de plantar igreja de modo prático e não estrutural, isto é, não focando em construir prédios, mas alcançar pessoas e discipular;
                 </li>
                 <li>
-                  <i class="material-icons">send</i>
+                  <i class="material-icons">fiber_manual_record</i>
                   Fazer tudo para a glória de Jesus, isto é, para que Ele seja conhecido e adorado.
                 </li>
               </ul>
             </div>
           </li>
         </ul>
+
       </div>
 
     </article>
@@ -139,13 +138,25 @@
     <article id="contact" class="home__contact">
 
       <div class="contact__greeting">
-        <p>Olá! Se você chegou até aqui depois de assistir nossos vídeos no Youtube, o próximo passo
-          é começar a prática dos <span style="text-transform:uppercase;">pilares</span>.
-          Então, se você quer receber nosso mentoreamento nesse sentido, faça seu cadastro ao lado 
-          e depois acesse a aba "Discipulado".
-        </p>
+        <p>Seja bem-vindo! O projeto PILARES se desenvolve em duas etapas:</p>
+
+        <ul style="margin:.5rem;">
+          <li>
+            - Conhecendo os PILARES<br>
+            Apresentação disponível em
+            <a href="https://www.youtube.com/channel/UCZ1topPf88fRLstn910_kHQ" target="_blank" class="greeting__channelLink">nosso canal</a>
+            do Youtube;
+          </li>
+          <li>
+            - Vivendo os PILARES<br>
+            Capacitação e mentoreamento neste site.
+          </li>
+        </ul>
+
         <p>
-          Se você ainda não assistiu nossos vídeos, acesse o <a href="#" class="greeting__channelLink">nosso canal</a>.
+          Se você já assistiu os vídeos e deseja começar a vivência dos
+          <span style="text-transform:uppercase;">pilares</span>, faça seu cadastro ao lado e depois acesse a aba
+          <a href="/discipulado/1" class="greeting__channelLink">"Discipulado"</a>.
         </p>
       </div>
 
@@ -153,30 +164,18 @@
 
         <div class="form__name">
           <label for="name" id="name__label">Nome</label>
-          <input 
-            type="text"
-            name="name"
-            id="name" 
-            placeholder="Escreva seu nome" 
-            required
-          >
+          <input type="text" name="name" id="name" placeholder="Escreva seu nome" required="required">
         </div>
 
         <div class="form__inputGroup">
           <div class="form__birth">
             <label for="birth" id="birth__label">Data de nascimento</label>
-            <input 
-              type="date" 
-              name="birth" 
-              id="birth" 
-              placeholder="Idade" 
-              required
-            >
+            <input type="date" name="birth" id="birth" placeholder="Idade" required="required">
           </div>
 
           <div class="form__gender">
             <label for="gender" id="gender__label">Sexo</label>
-            <select name="gender" id="gender" required>
+            <select name="gender" id="gender" required="required">
               <option value=""></option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
@@ -186,34 +185,17 @@
 
         <div class="form__address">
           <label for="address" id="address__label">Residência</label>
-          <input 
-            type="text"
-            name="address"
-            id="address" 
-            placeholder="Cidade, estado e país apenas" 
-            required
-          >
+          <input type="text" name="address" id="address" placeholder="Cidade, estado e país apenas" required="required">
         </div>
 
         <div class="form__email">
           <label for="email" id="email__label">E-mail</label>
-          <input 
-            type="email"
-            name="email"
-            id="email" 
-            placeholder="Escreva seu e-mail" 
-            required
-          >
+          <input type="email" name="email" id="email" placeholder="Escreva seu e-mail" required="required">
         </div>
 
         <div class="form__phone">
           <label for="phone" id="phone__label">Whatsapp (opcional)</label>
-          <input 
-            type="number"
-            name="phone"
-            id="phone" 
-            placeholder="(xx) 9xxxx-xxxx"
-          >
+          <input type="number" name="phone" id="phone" placeholder="(xx) 9xxxx-xxxx">
         </div>
 
         <div class="form__action">
@@ -226,6 +208,5 @@
     </article>
 
   </main>
-
 
 {% endblock content %}

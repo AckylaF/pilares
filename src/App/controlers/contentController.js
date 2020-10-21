@@ -6,11 +6,18 @@ module.exports = {
     return res.render("home");
   },
   show(req, res) {
-    Content.find(req.params.id, (err, result) => {
-      if(err) throw err;
-      let content = Array.from(result);
-      return res.render("discipulado", { content: content[0] });
-    })
+    switch (req.params.id) {
+      case "1":
+        return res.render("introduction");
+      case "27":
+        return res.render("conclusion");
+      default:
+        Content.find(req.params.id, (err, result) => {
+          if(err) throw err;
+          let content = Array.from(result);
+          return res.render("discipulado", { content: content[0] });
+        })  
+    }
   },
   send(req, res) {
     const { name, birth, gender, address, email, phone, feedbackDay, mentorship } = req.body;

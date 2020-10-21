@@ -10,7 +10,8 @@ routes.get('*', (req, res, next) => {
   } else {
     next();
   }
-});
+  }
+);
 routes.get("/", ContentController.index);
 routes.get("/discipulado/:id", ContentController.show);
 
