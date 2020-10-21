@@ -67,17 +67,17 @@ h1{
 
 
 
-.form__name{
+.form__email{
   display: flex;
   flex-direction: column;
   width: 20%;
 }
-#name__label{
+#email__label{
   font-size: 1.1rem;
   font-weight: bold;
   margin: 2rem 0 .4rem;
 }
-#name{
+#email{
   padding: .5rem;
   font-size: 1rem;
   border: 1px solid #103C57;

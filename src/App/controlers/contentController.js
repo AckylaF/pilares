@@ -32,7 +32,7 @@ module.exports = {
     };
 
     if(mentorship) {
-      mailOptions.subject = `Resposta do dia ${feedbackDay}. (${name})`;
+      mailOptions.subject = `Resposta do dia ${feedbackDay}. (${email})`;
       mailOptions.text = mentorship;
       mailOptions.html = mentorship;
     }
