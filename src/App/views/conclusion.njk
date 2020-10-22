@@ -47,18 +47,12 @@
     </article>
 
     <form style="margin-bottom:1.5rem;" class="feedback" action="/send" method="POST">
-      <div class="form__name">
-          <label for="name" id="name__label">Nome</label>
-          <input 
-            type="text"
-            name="name"
-            id="name" 
-            placeholder="Escreva seu nome" 
-            required
-          >
+      <div class="form__email form__email--mobile">
+        <label for="email" id="email__label">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Escreva seu e-mail" required="required">
       </div>
       <input id="feedbackDay" type="hidden" name="feedbackDay">
-      <textarea onclick="Mask.getFeedbackDay()" name="mentorship" id="mentorship" required></textarea>
+      <textarea placeholder="Escreva aqui as suas dúvidas ou comentários sobre esse tópico" onclick="Mask.getFeedbackDay()" name="mentorship" id="mentorship" required></textarea>
       <button type="submit" class="button">Enviar</button>
     </form>
 

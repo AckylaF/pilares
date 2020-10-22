@@ -12,6 +12,16 @@
   div.header__menuIcon:hover .menu__lines{
     background-color: #fff;
   }
+  #dropdownContainer .menu__dropdown--closed{
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+  ul.menu__dropdown--open{
+    max-height: 100%;
+    opacity: 1;
+  }
 }
 
 
@@ -105,7 +115,7 @@
   main.container{
    width: 90vw;
   }
-  div.form__name{
+  div.form__email--mobile{
     width: 50%;
   }
   article table{
