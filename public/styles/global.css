@@ -154,7 +154,10 @@ body{
   opacity: 0;
   transition: .25s;
 }
-.menu__dropdownContainer:hover .menu__dropdown{
+.menu__dropdownContainer:hover .menu__dropdown,
+.menu__dropdownContainer:active .menu__dropdown,
+.menu__dropdownContainer:focus .menu__dropdown
+{
   margin-top: .3rem;
   grid-gap: .3rem;
   padding: .3rem 0;
@@ -172,7 +175,10 @@ body{
   justify-content: center;
   transition: padding-left .3s;
 }
-.dropdown__items:hover{
+.dropdown__items:hover,
+.dropdown__items:active,
+.dropdown__items:focus
+{
   padding-left: 15%;
   background-color: #fff;
   color: var(--main-green)
@@ -199,7 +205,10 @@ body{
   top: unset;
   bottom: 0;
 }
-.dropdown__items:hover .dropdown__nestedMenu{
+.dropdown__items:hover .dropdown__nestedMenu,
+.dropdown__items:active .dropdown__nestedMenu,
+.dropdown__items:focus .dropdown__nestedMenu
+{
   visibility: visible;
   width: 50%;
   opacity: 1;

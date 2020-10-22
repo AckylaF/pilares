@@ -20,11 +20,5 @@ const Menu = {
     document.querySelector(".line1").classList.toggle("line1--active");
     document.querySelector(".line2").classList.toggle("line2--active");
     document.querySelector(".line3").classList.toggle("line3--active");
-  },
-  toggleMobileMenu() {
-    if(screen.width < 769){
-      document.querySelector(".menu__dropdown").classList.toggle("menu__dropdown--open");
-      document.querySelector(".menu__dropdown").classList.toggle("menu__dropdown--closed");
-    }
   }
 }
