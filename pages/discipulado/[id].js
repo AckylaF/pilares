@@ -54,7 +54,7 @@ export default function Discipulado({ posts, id }) {
 }
 
 export async function getServerSideProps(context) {
-  const response = await axios.get('/api/get-content')
+  const response = await axios.get('https://projetopilares.com/api/get-content')
 
   return {
     props: { posts: response.data, ...context.params }
