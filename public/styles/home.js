@@ -41,6 +41,7 @@ export const CallToAction = styled.a(
     background-color: ${colors.secondary};
     box-shadow: 0px 0px 20px -2px ${colors.background.main};
     font-weight: bold;
+    cursor: pointer;
     transition: 0.25s;
 
     @media screen and (min-width: ${media.medium}) {

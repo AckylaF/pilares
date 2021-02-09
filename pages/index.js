@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 import {
   Cover,
@@ -18,8 +18,15 @@ import Header from '../src/components/Header'
 import Arrow from '../src/components/Arrow'
 import Form from '../src/components/Form'
 import Footer from '../src/components/Footer'
+import Modal from '../src/components/Modal'
 
 export default function Home() {
+  const [isModalVisible, setIsModalVisible] = useState(true)
+  const contact = useRef()
+  const scrollToContactSection = () => {
+    contact.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <Head title="Discipulado Pilares" />
@@ -29,7 +36,7 @@ export default function Home() {
           Ser igreja e plantar igreja através de uma vida alicerçada e frutífera
           com Jesus!
         </Title>
-        <CallToAction href="/#contact">Faça parte</CallToAction>
+        <CallToAction onClick={scrollToContactSection}>Faça parte</CallToAction>
         <Arrow />
       </Cover>
 
@@ -98,7 +105,7 @@ export default function Home() {
           </Info>
         </AboutContainer>
 
-        <ContactContainer>
+        <ContactContainer ref={contact}>
           <Greeting>
             <p>
               Seja bem-vindo!
@@ -119,6 +126,9 @@ export default function Home() {
         </ContactContainer>
       </main>
       <Footer />
+      {isModalVisible ? (
+        <Modal hideModal={() => setIsModalVisible(false)} />
+      ) : null}
     </>
   )
 }

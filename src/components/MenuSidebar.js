@@ -176,7 +176,9 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
           </li>
           <li>
             <h3>
-              <a href="/#about">Sobre</a>
+              <a href="/#about" onClick={toggleSidebar}>
+                Sobre
+              </a>
             </h3>
           </li>
 
@@ -192,7 +194,9 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
 
           <li>
             <h3>
-              <a href="/#contact">Contato</a>
+              <a href="/#contact" onClick={toggleSidebar}>
+                Contato
+              </a>
             </h3>
           </li>
         </OuterList>
