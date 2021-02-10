@@ -162,6 +162,7 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
     document
       .querySelector('.menu__section--visible')
       ?.classList.remove('menu__section--visible')
+
     e.target.nextSibling.classList.toggle('menu__section--visible')
   }
 
