@@ -87,3 +87,15 @@ export const Farewell = styled.p`
   font-size: 1.3rem;
   margin: 2rem 0;
 `
+
+export const Link = styled.a`
+  text-decoration: underline;
+  transition: 0.25s;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-position-x: 100%;
+    background-color: ${props => props.theme.colors.primary.main};
+  }
+`

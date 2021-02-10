@@ -6,6 +6,7 @@ import {
   Wrapper,
   Title,
   Content,
+  Link,
   Farewell
 } from '../../public/styles/discipulado'
 
@@ -42,6 +43,15 @@ export default function Discipulado({ posts, id }) {
 
         <Content>
           <UnsafeComponent html={content.content} />
+          {id === '13' ? (
+            <p>
+              Clique{' '}
+              <Link href="/readingPlan.pdf" download="Plano de Leitura">
+                aqui
+              </Link>{' '}
+              para fazer o download do seu plano anual de leitura da bíblia
+            </p>
+          ) : null}
         </Content>
 
         <FeedbackForm id={id} />

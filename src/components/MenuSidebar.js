@@ -119,7 +119,7 @@ const ListItem = styled.li(
       color: ${props => props.theme.colors.primary.main};
     }
 
-    &:hover section {
+    .menu__section--visible {
       padding: 1.5rem 0;
       opacity: 1;
       visibility: visible;
@@ -158,6 +158,12 @@ const ListItem = styled.li(
 export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
   const [active, setActive] = useState(false)
   const toggleInnerList = () => setActive(!active)
+  const toggleMenuSection = e => {
+    document
+      .querySelector('.menu__section--visible')
+      ?.classList.remove('menu__section--visible')
+    e.target.nextSibling.classList.toggle('menu__section--visible')
+  }
 
   return (
     <Container open={isSidebarOpen}>
@@ -202,13 +208,13 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
         </OuterList>
         <InnerList active={active}>
           <div onClick={toggleInnerList} />
-          <ListItem>
+          <ListItem onClick={e => toggleMenuSection(e)}>
             <h3>
               <a href="/discipulado/intro">Introdução</a>
             </h3>
           </ListItem>
 
-          <ListItem>
+          <ListItem onClick={e => toggleMenuSection(e)}>
             <h3>Pilar G</h3>
             <section>
               <Link href="/discipulado/2">
@@ -229,7 +235,7 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
             </section>
           </ListItem>
 
-          <ListItem>
+          <ListItem onClick={e => toggleMenuSection(e)}>
             <h3>Pilar A</h3>
             <section>
               <Link href="/discipulado/7">
@@ -250,7 +256,7 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
             </section>
           </ListItem>
 
-          <ListItem>
+          <ListItem onClick={e => toggleMenuSection(e)}>
             <h3>Pilar D</h3>
             <section>
               <Link href="/discipulado/12">
@@ -271,7 +277,7 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
             </section>
           </ListItem>
 
-          <ListItem>
+          <ListItem onClick={e => toggleMenuSection(e)}>
             <h3>Pilar C</h3>
             <section>
               <Link href="/discipulado/17">
@@ -292,7 +298,7 @@ export default function MenuSidebar({ isSidebarOpen, toggleSidebar }) {
             </section>
           </ListItem>
 
-          <ListItem>
+          <ListItem onClick={e => toggleMenuSection(e)}>
             <h3>Pilar M</h3>
             <section>
               <Link href="/discipulado/22">

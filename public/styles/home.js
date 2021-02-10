@@ -8,7 +8,6 @@ export const Cover = styled.div`
   background: url('/images/cover.jpg') no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   color: ${props => props.theme.colors.secondary};
   height: 100vh;
 `
